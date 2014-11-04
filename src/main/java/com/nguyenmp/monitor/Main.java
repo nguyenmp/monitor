@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Main {
     private static final String BASE_URL = "http://astral-casing-728.appspot.com/";
-    private static final int TIMEOUT = 60*1000; // 1 minute in milliseconds
+    private static final int TIMEOUT = 5*60*1000; // 5 minute in milliseconds
     public static void main(String[] args) throws IOException {
         // Get the hostname
         Runtime runtime = Runtime.getRuntime();
