@@ -54,7 +54,8 @@ public class Main {
         String[] parts = line.split("\\s+");
 
         String username = parts[0];
-        boolean isRemote = parts[4].contains(":");
+        boolean isRemote = !parts[parts.length - 1].contains(":");
+        System.out.println(isRemote);
 
         // Spin up a new thread to post this entry
         UploadModel uploadModel = new UploadModel();
